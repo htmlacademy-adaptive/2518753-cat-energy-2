@@ -1,0 +1,16 @@
+.main-nav {
+  @include font-face ("Oswald",400,normal,url("../../fonts/oswald/oswaldregular.woff2") format("woff2"));
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $base-color-text-black;
+}
+
+.main-nav__site-list {
+  list-style: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $base-color-text-black;
+}
