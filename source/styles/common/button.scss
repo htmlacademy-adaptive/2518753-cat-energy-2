@@ -1,0 +1,10 @@
+.button {
+  @include font-face ("Oswald",400,normal,url("../../fonts/oswald/oswaldregular.woff2") format("woff2"));
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $button-color-text;
+  background-color: $button-background;
+}
