@@ -3,7 +3,6 @@
 @import "common/mixins";
 @import "common/fonts";
 @import "common/global";
-@import "common/button";
 @import "common/visually-hidden";
 
 // BLOCKS
@@ -23,3 +22,5 @@
 @import "./blocks/additional-products";
 @import "./blocks/present";
 @import "./blocks/subscription-form";
+@import "./blocks/button";
+
