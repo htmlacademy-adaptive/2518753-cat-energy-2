@@ -1,0 +1,21 @@
+.additional-products h3 {
+  font-family: $oswald;
+  font-size: 40px;
+  line-height: 40px;
+  color: $base-color-text-black;
+  font-weight: 400;
+}
+
+.additional-products__title {
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.additional-products__units,
+.additional-products__price {
+  font-family: $lato;
+  font-size: 16px;
+  line-height: 20px;
+}

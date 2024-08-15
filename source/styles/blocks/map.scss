@@ -1,0 +1,20 @@
+.map {
+  font-weight: 400;
+}
+
+.map__title {
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $base-color-text-black;
+}
+
+.map__adress {
+  font-family: $lato;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+}
