@@ -11,7 +11,7 @@
 }
 
 .examples__text {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-size: 16px;
   line-height: 24px;
 }
@@ -24,7 +24,7 @@
 }
 
 .examples__container-label {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-size: 14px;
   line-height: 14px;
 }

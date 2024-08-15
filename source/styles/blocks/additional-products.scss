@@ -15,7 +15,7 @@
 
 .additional-products__units,
 .additional-products__price {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-size: 16px;
   line-height: 20px;
 }
@@ -25,7 +25,7 @@
 }
 
 .present__text {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
