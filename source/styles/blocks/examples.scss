@@ -2,8 +2,8 @@
   background-color: #f2f2f2;
 }
 
-.examples__tittle {
-  font-family: "Oswald", sans-serif;
+.examples__title {
+  font-family: $oswald;
   font-size: 60px;
   line-height: 60px;
   color: $base-color-text-black;
@@ -17,7 +17,7 @@
 }
 
 .examples__container-options {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 30px;
   line-height: 37px;
   color: $base-color-text-black;
@@ -30,7 +30,7 @@
 }
 
 .examples__expenses {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 20px;
   line-height: 20px;
   color: $base-color-text-black;

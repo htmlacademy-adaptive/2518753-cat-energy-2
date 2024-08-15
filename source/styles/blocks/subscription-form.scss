@@ -1,9 +1,9 @@
 .subscription-form {
   color: $base-color-text-black;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
 }
 
-.subscription-form__tittle {
+.subscription-form__title {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
