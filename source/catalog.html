@@ -23,7 +23,16 @@
       </picture>
     </a>
     <nav class="main-nav">
-      <button type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__burger" type="button"><span class="visually-hidden">Открыть меню</span>
+        <svg class="main-nav__burger--icon" viewBox="0 0 24 24" width="24" height="24">
+          <use href="..\icons\stack.svg#burger"></use>
+        </svg>
+      </button>
+      <button class="main-nav__burger main-nav__burger--cross" type="button"><span class="visually-hidden">Закрыть меню</span>
+        <svg class="main-nav__burger--icon main-nav__cross--icon" viewBox="0 0 24 24" width="24" height="24">
+          <use href="..\icons\stack.svg#cross"></use>
+        </svg>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__site-list">
           <li class="main-nav__item main-nav__item--active">
@@ -218,10 +227,14 @@
             </table>
             <a class="button" href="#">заказать</a>
           </li>
-          <li class="catalog__product-card">
+          <li class="catalog__product-card catalog__product-card--addition">
             <!-- крестик либо фон на контейнер -->
-            <h3 class="catalog__product-card-title">Показать еще 100500 товаров</h3>
-            <p class="catalog__product-card-parameter">На самом деле вкусов гораздо больше!</p>
+            <div class="catalog__container-addition">
+              <a class="catalog__product-card-link" href="product.html">
+                <h3 class="catalog__product-card-title">Показать еще 100500 товаров</h3>
+              </a>
+              <p class="catalog__product-card-parameter">На самом деле вкусов гораздо больше!</p>
+            </div>
             <a class="button button--grey" href="#">показать все</a>
           </li>
         </ul>
@@ -233,7 +246,7 @@
         <h3 class="additional-products__tittle">Дополнитльные товары</h3>
         <ul class="additional-products__list">
           <li class="additional-products__list-item">
-            <p class="additional-products__tittle">Сахарозаменитель</p>
+            <p class="additional-products__tittle">cахарозаменитель</p>
             <p class="additional-products__units">1 упаковка (100 г)</p>
             <span class="additional-products__price">200 ₽</span>
             <a class="button" href="#">заказать</a>
@@ -279,7 +292,7 @@
       <h2 class="visually-hidden">Карта</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428381988!2d30.320503012697746!3d59.938796861982894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1723025348032!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="map__wrapper">
-        <p class="map__tittle">приглашаем к сотрудничеству дилеров!</p>
+        <p class="map__title">приглашаем к сотрудничеству дилеров!</p>
         <div class="map__adress">
           <p class="map__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="map__city">Санкт-Петербург</p>
@@ -290,30 +303,44 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__ogo-text" href="../source/index.html">
-        <img class="main-footer_logo-text" src="images/logo-cat-energy.svg" width="101" height="18" alt="Логотип магазина CAT ENERGY">
+      <a class="main-footer__logo-text" href="../source/index.html">
+        <img class="main-footer__logo-image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Логотип магазина CAT ENERGY">
       </a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="https://vk.com/htmlacademy">
+          <a class="social-list__link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">В контакте</span>
+            <svg viewBox="0 0 28 22" width="28" height="22">
+              <use href="..\icons\stack.svg#vkontakte"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютуб</span>
+            <svg viewBox="0 0 28 22" width="28" height="22">
+              <use href="..\icons\stack.svg#youtube"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="https://t.me/htmlacademy">
+          <a class="social-list__link" href="https://t.me/htmlacademy">
+            <svg viewBox="0 0 28 22" width="28" height="22">
+              <use href="..\icons\stack.svg#telegram"></use>
+            </svg>
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
       </ul>
       <div class="main-footer__logo-academy">
-        <p>HTML Academy</p>
-        <a href="https://htmlacademy.ru/">
-          <img class="main-footer__logo" src="images/html-academy.svg" width="27" height="34" alt="Логотип HTML-академии"></a>
+        <a class="main-footer__logo-academy-svg" href="https://htmlacademy.ru/">
+          <p>HTML Academy
+            <svg viewBox="0 0 27 34" width="27" height="34">
+              <use href="..\icons\stack.svg#logo-html"></use>
+            </svg>
+            <span class="visually-hidden">Логотип HTML-академии</span>
+          </p>
+        </a>
       </div>
     </div>
 
