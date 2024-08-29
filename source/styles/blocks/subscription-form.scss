@@ -1,7 +1,21 @@
 .subscription-form {
   color: $base-color-text-black;
   font-family: $oswald;
+  width: 100%;
 }
+
+.subscription-form__wrapper {
+  padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 110px 104px;
+  }
+}
+
 
 .subscription-form__title {
   font-size: 24px;

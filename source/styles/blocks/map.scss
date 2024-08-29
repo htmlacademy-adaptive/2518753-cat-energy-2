@@ -1,5 +1,32 @@
 .map {
   font-weight: 400;
+  margin: 0;
+  width: 100%;
+}
+
+.map__wrapper {
+  padding: 0;
+
+  // @media (min-width: $tablet-width) {
+  // }
+
+  // @media (min-width: $desktop-width) {
+  // }
+}
+
+.map__container {
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 565px;
+    padding: 60px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 78px;
+  }
 }
 
 .map__title {

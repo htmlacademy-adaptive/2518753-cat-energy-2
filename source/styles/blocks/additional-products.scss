@@ -1,6 +1,20 @@
 .additional-products {
+  width: 100%;
   font-size: 14px;
   line-height: 14px;
+}
+
+.additional-products__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    padding-right: 109px;
+  }
 }
 
 .additional-products h3 {
@@ -13,7 +27,36 @@
 
 .additional-products__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: repeat(1, 280px);
+
+  @media (min-width: $tablet-width) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(1, 708px);
+  }
+
+  @media (min-width: $desktop-width) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-products__container {
+    display: flex;
+    gap: 80px;
+  }
+}
+
 
 .additional-products__tittle {
   font-family: $oswald;

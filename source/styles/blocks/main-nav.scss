@@ -4,10 +4,35 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $base-color-text-black;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 29.64px;
+  }
 }
 
 .main-nav__site-list {
   list-style: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__burger {
+    display: none;
+  }
 }
 
 .main-nav__link {

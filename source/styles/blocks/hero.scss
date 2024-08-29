@@ -1,12 +1,78 @@
 .hero {
+  width: 100%;
   font-family: $oswald;
   font-size: 14px;
   line-height: 14px;
   color: $base-color-text-black;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  // @media (min-width: $desktop-width) {
+  // }
+}
+
+.hero__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 331px;
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__button-container {
+    position: absolute;
+    top: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__container-lead {
+    position: relative;
+  }
+
+  .hero__button-container {
+    position: absolute;
+    top: 390px;
+    left: 180px;
+  }
 }
 
 .hero__lead {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 60px;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.hero__tagline {
+  text-align: center;
 }
