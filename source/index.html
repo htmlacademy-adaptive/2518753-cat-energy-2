@@ -15,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--cat">
     <div class="main-header__wrapper container-wrapper">
       <div class="main-header__logo-container">
         <a class="main-header-logo-pic" href="index.html">
@@ -25,11 +25,11 @@
             <img src="images/header-mobile.svg" width="190" height="38" alt="Продукция Cat Energy">
           </picture>
         </a>
-        <button class="main-nav__burger" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class=" main-header__icon main-nav__burger--icon main-icon--opened" viewBox="0 0 24 24" width="24" height="24">
+        <button class="main-header__burger" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg class="main-header__icon main-header__burger--icon" viewBox="0 0 24 24" width="24" height="24">
             <use href="..\icons\stack.svg#burger"></use>
           </svg>
-          <svg class="main-header__icon main-nav__cross--icon main-icon--closed" viewBox="0 0 24 24" width="24" height="24">
+          <svg class="main-header__icon main-header__cross--icon" viewBox="0 0 24 24" width="24" height="24">
             <use href="..\icons\stack.svg#cross"></use>
           </svg>
         </button>
@@ -56,19 +56,17 @@
     <section class="hero">
       <div class="hero__wrapper container-wrapper">
         <div class="hero__container-lead">
-          <h2 class="hero__lead">Функциональное питание для котов</h2>
+          <h2 class="hero__lead">Функциональное питание&nbsp;для&nbsp;котов</h2>
           <p class="hero__tagline">Занялся собой? Займись котом!</p>
         </div>
-        <picture>
-          <source width="552" height="449" type="image/jpg" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+        <picture class="hero__picture">
+          <source width="552" height="499" type="image/jpg" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
           <source width="709" height="609" type="image/jpg" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
           <img src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Продукция Cat Energy">
         </picture>
-        <div class="hero__button-container">
-          <a class="button" href="#">
-            подобрать программу
-          </a>
-        </div>
+        <a class="button hero__button" href="#">
+          подобрать программу
+        </a>
       </div>
     </section>
 
@@ -110,39 +108,50 @@
     <section class="examples">
       <div class="examples__wrapper container-wrapper">
         <h2 class="examples__title">Живой пример</h2>
-        <div class="examples__container">
-          <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <p class="examples__container-label">снижение веса</p>
-          <p class="examples__container-options">5 КГ</p>
-          <p class="examples__container-label">затрачено времени</p>
-          <p class="examples__container-options">60 ДНЕЙ</p>
-          <div class="examples__expenses">
-            <span class="examples__tiitle-examples">затраты на питание:</span>
-            <span class="examples__examples">15000 РУБ.</span>
-          </div>
-          <div class="examples__picture">
-            <button class="examples__button-thumb" type="button">
-              <span class="visually-hidden">Ползунок</span>
-              <svg class="examples__thumb" viewBox="0 0 40 40" width="40" height="40" fill="none">
-                <use href="..\icons\stack.svg#thumb"></use>
-              </svg>
-            </button>
-            <picture>
-              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x,images/cat-before-tablet@2x.png 2x">
-              <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Продукция Cat Energy">
-            </picture>
-
-            <picture>
-              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x,images/cat-after-tablet@2x.png 2x">
-              <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Продукция Cat Energy">
-            </picture>
+        <div class="examples__background">
+          <div class="examples__container">
+            <div class="examples__text-container">
+              <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="examples__expenses-container">
+                <div class="examples__container-label">
+                  <span class="examples__options examples__label--weight">5 КГ</span>
+                  <span class="examples__options examples__label--time">60 ДНЕЙ</span>
+                </div>
+                <div class="examples__expenses">
+                  <span class="examples__tiitle-examples">затраты на питание:</span>
+                  <span class="examples__examples">15000 РУБ.</span>
+                </div>
+              </div>
+            </div>
+            <div class="examples__picture">
+              <button class="examples__button-thumb" type="button">
+                <span class="visually-hidden">Ползунок</span>
+                <svg class="examples__thumb" viewBox="0 0 40 40" width="40" height="40" fill="none">
+                  <use href="..\icons\stack.svg#thumb"></use>
+                </svg>
+              </button>
+              <div class="examples__picture-container">
+                <div class="examples__picture-before">
+                  <picture class="examples__cat-big">
+                    <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x,images/cat-before-tablet@2x.png 2x">
+                    <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Продукция Cat Energy">
+                  </picture>
+                </div>
+                <div class=" examples__picture-after">
+                  <picture class="examples__cat-small">
+                    <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x,images/cat-after-tablet@2x.png 2x">
+                    <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Продукция Cat Energy">
+                  </picture>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="map">
-      <div class="map__wrapper container-wrapper">
+      <div class="map__wrapper">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__container">
           <p class="map__title">приглашаем к сотрудничеству дилеров!</p>
@@ -159,45 +168,53 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper container-wrapper">
-      <a class="main-footer__logo-text" href="../source/index.html">
-        <img class="main-footer__logo-image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Логотип магазина CAT ENERGY">
-      </a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">В контакте</span>
-            <svg viewBox="0 0 28 22" width="28" height="22">
-              <use href="..\icons\stack.svg#vkontakte"></use>
-            </svg>
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a class="main-footer__logo-text" href="../source/index.html">
+            <img class="main-footer__logo-image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Логотип магазина CAT ENERGY">
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-            <svg viewBox="0 0 28 22" width="28" height="22">
-              <use href="..\icons\stack.svg#youtube"></use>
-            </svg>
-          </a>
+        <li class="main-footer__item">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">В контакте</span>
+                <svg viewBox="0 0 28 22" width="28" height="22">
+                  <use href="..\icons\stack.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
+                <svg viewBox="0 0 28 22" width="28" height="22">
+                  <use href="..\icons\stack.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://t.me/htmlacademy">
+                <svg viewBox="0 0 28 22" width="28" height="22">
+                  <use href="..\icons\stack.svg#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+          </ul>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://t.me/htmlacademy">
-            <svg viewBox="0 0 28 22" width="28" height="22">
-              <use href="..\icons\stack.svg#telegram"></use>
-            </svg>
-            <span class="visually-hidden">Телеграм</span>
-          </a>
+        <li class="main-footer__item">
+          <div class="main-footer__logo-academy">
+            <a class="main-footer__logo-academy-svg" href="https://htmlacademy.ru/">
+              <p class="main-footer__logo">HTML Academy
+                <svg viewBox="0 0 27 34" width="27" height="34">
+                  <use href="..\icons\stack.svg#logo-html"></use>
+                </svg>
+                <span class="visually-hidden">Логотип HTML-академии</span>
+              </p>
+            </a>
+          </div>
         </li>
       </ul>
-      <div class="main-footer__logo-academy">
-        <a class="main-footer__logo-academy-svg" href="https://htmlacademy.ru/">
-          <p>HTML Academy
-            <svg viewBox="0 0 27 34" width="27" height="34">
-              <use href="..\icons\stack.svg#logo-html"></use>
-            </svg>
-            <span class="visually-hidden">Логотип HTML-академии</span>
-          </p>
-        </a>
-      </div>
     </div>
 
   </footer>

@@ -34,6 +34,15 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .advantages__list {
@@ -69,36 +78,37 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: auto;
     min-height: 280px;
     position: relative;
   }
 }
 
 .advantages__text {
-  width: 200px;
   padding-left: 80px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 204px;
-    padding-right: 26px;
-    padding-left: 0;
+    padding-right: 0;
     padding-top: 151px;
     min-height: 280px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     width: 246px;
     padding: 151px 22px 57px 0;
     min-height: 280px;
+    padding-right: 0;
   }
 }
 
 .advantages__item--benefit::after {
   content: "";
   background-image: url("../../icons/stack.svg#index-leaf");
-  top: 15px;
+  top: 0;
   width: 60px;
   height: 60px;
   background-color: $button-background;
@@ -108,12 +118,18 @@
   background-size: 32px 32px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
 }
 
 .advantages__item--water::after {
   content: "";
   background-image: url("../../icons/stack.svg#index-water");
-  top: 15px;
+  top: 0;
   width: 60px;
   height: 60px;
   background-color: $button-background;
@@ -123,12 +139,18 @@
   background-size: 32px 32px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
 }
 
 .advantages__item--instructions::after {
   content: "";
   background-image: url("../../icons/stack.svg#index-eat");
-  top: 15px;
+  top: 0;
   width: 60px;
   height: 60px;
   background-color: $button-background;
@@ -138,12 +160,18 @@
   background-size: 32px 32px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
 }
 
 .advantages__item--index-watch::after {
   content: "";
   background-image: url("../../icons/stack.svg#index-watch");
-  top: 15px;
+  top: 0;
   width: 60px;
   height: 60px;
   background-color: $button-background;
@@ -153,4 +181,10 @@
   background-size: 32px 32px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
 }

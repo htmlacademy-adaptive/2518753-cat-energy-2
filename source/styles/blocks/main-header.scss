@@ -1,13 +1,21 @@
 .main-header {
   width: 100%;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 
 .main-header__wrapper {
+  padding-bottom: 14px;
+
   @media (min-width: $tablet-width) {
     padding: 25px 34px 0 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,4 +30,81 @@
   padding-right: 20px;
   padding-top: 13px;
   align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 94px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 543px;
+  }
+}
+
+
+.main-header__burger:hover {
+  opacity: 0.8;
+}
+
+.main-header__burger:active {
+  opacity: 0.6;
+}
+
+.main-header__burger {
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  background-color: $button-background-white;
+  display: block;
+  cursor: pointer;
+}
+
+.main-header__burger--cross {
+  display: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-.main-header__burger--active .main-header__burger--icon {
+    display: none;
+  }
+
+  .main-header__burger--active .main-header__cross--icon {
+    display: block;
+  }
+
+  .main-header__burger {
+    display: none;
+  }
+}
+
+.main-header__cross--icon {
+  display: none;
+}
+
+.main-header__burger--active .main-header__burger--icon {
+  display: none;
+}
+
+.main-header__burger--active .main-header__cross--icon {
+  display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header--cat::before {
+    content: "";
+    width: 50%;
+    height: 694px;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/index-background-desktop-desktop@2x.png");
+    background-position: right;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+  }
 }
