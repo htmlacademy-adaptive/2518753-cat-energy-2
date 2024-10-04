@@ -19,12 +19,13 @@
 .map__container {
   padding: 26px 20px;
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  flex-direction: row;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 150px;
+    padding: 60px 70px;
     justify-content: space-between;
+    min-height: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,8 +34,8 @@
     background-color: #ffffff;
     width: 565px;
     min-height: 199px;
-    top: 95px;
-    left: 173px;
+    top: 96px;
+    left: 111px;
   }
 }
 
@@ -42,16 +43,15 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
-  text-align: left;
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
-  width: 140px;
   margin: 0;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 163px;
   }
 }
 
@@ -59,17 +59,29 @@
   font-family: $lato;
   font-size: 14px;
   line-height: 20px;
-  text-align: right;
   width: 140px;
+  margin-right: 3px;
 
-  @media (min-width: $desktop-width) {
+
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+    width: 157px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
 .map__street {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 19px;
@@ -78,4 +90,19 @@
 
 .map__city {
   margin: 0;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.map__container--index {
+  @media (min-width: $desktop-width) {
+    top: 77px;
+  }
 }

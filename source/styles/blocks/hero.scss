@@ -11,6 +11,34 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 497px;
+  }
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 302px;
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../images/index-background-desktop-mobile@2x.png");
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-position: center top;
+  z-index: -10;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .hero__wrapper {
@@ -24,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    padding-left: 100px;
     padding-right: 331px;
     display: flex;
   }
@@ -34,16 +62,13 @@
 .hero__container-lead {
   width: 100%;
   min-height: 302px;
-  background:
-    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../../images/index-background-desktop-mobile@2x.png");
   background-size: 320px 302px;
   padding-top: 27px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
     background: none;
-    padding-left: 120px;
+    padding-left: 89px;
     min-height: 180px;
   }
 }
@@ -76,9 +101,11 @@
 
 .hero__tagline {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  margin-right: 2px;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -103,16 +130,15 @@
   @media (min-width: $tablet-width) {
     position: static;
     width: 709px;
-    height: 609px;
+    min-height: 609px;
     display: block;
-    padding-left: 32px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+    top: -54px;
+    left: 559px;
     position: absolute;
-    top: -30px;
-    left: 570px;
   }
 }
 
@@ -131,14 +157,14 @@
     height: 54px;
     padding: 14px 26px;
     position: absolute;
-    top: 260px;
-    left: 150px;
+    top: 257px;
+    left: 119px;
     font-size: 20px;
     line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
     top: 260px;
-    left: 230px;
+    left: 190px;
   }
 }

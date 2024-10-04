@@ -2,6 +2,7 @@
   width: 100%;
   font-size: 14px;
   line-height: 14px;
+  overflow: hidden;
 }
 
 .additional-products__wrapper {
@@ -38,6 +39,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    grid-template-columns: repeat(1, 896px);
+    // нужно ли что здесь переделать? добавляю кнопку еще она в начало уезжает.может 3 колонки сделать?
   }
 }
 
@@ -58,7 +61,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 40px 28px 36px;
+    padding: 26px 41px 28px 38px;
     border: 1px solid #cdcdcd;
     border-top: none;
   }
@@ -66,10 +69,10 @@
   @media (min-width: $desktop-width) {
     display: flex;
     padding: 0;
-    width: 896px;
     justify-content: space-between;
     border-left: none;
     border-right: none;
+    flex-wrap: wrap;
   }
 }
 
@@ -85,7 +88,7 @@
   height: 1px;
   background-color: #e6e6e6;
   position: absolute;
-  top: 120px;
+  top: 129px;
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -99,9 +102,8 @@
   font-size: 24px;
   line-height: 24px;
   color: #222222;
-  text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   position: relative;
   font-weight: 400;
 
@@ -109,6 +111,13 @@
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 80px;
+    padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 0;
   }
 }
 
@@ -118,14 +127,19 @@
   height: 2px;
   background-color: $button-background;
   position: absolute;
-  top: 12px;
-  left: 286px;
+  top: 9px;
+  left: 267px;
 
   @media (min-width: $tablet-width) {
     height: 2px;
     background-color: $button-background;
-    top: 13px;
+    top: 14px;
     left: 383px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+    left: 416px;
   }
 }
 
@@ -135,18 +149,19 @@
   height: 1px;
   background-color: #e6e6e6;
   position: absolute;
-  top: 50px;
+  top: 58px;
   left: 0;
 
   @media (min-width: $tablet-width) {
     height: 2px;
     background-color: $button-background;
-    top: 13px;
-    left: -770px;
+    top: 14px;
+    left: -709px;
   }
 
   @media (min-width: $desktop-width) {
-    left: -1250px;
+    left: -1260px;
+    top: 18px;
   }
 }
 
@@ -168,7 +183,8 @@
   text-transform: uppercase;
   color: #222222;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
+  font-family: $oswald;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -185,6 +201,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  flex-wrap: nowrap;
 
   @media (min-width: $tablet-width) {
     gap: 48px;
@@ -202,7 +219,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
@@ -214,7 +233,9 @@
 .additional-products__button {
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

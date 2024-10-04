@@ -1,13 +1,13 @@
 .catalog {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 67px;
   }
 }
 
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 109px;
   }
 }
 
@@ -28,15 +28,20 @@
   color: $base-color-text-black;
   font-weight: 400;
   margin: 0;
-  padding: 27px 22px 41px;
+  padding: 28px 20px 41px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 159px;
+    margin-bottom: 164px;
     padding-bottom: 0;
     font-size: 60px;
     line-height: 60px;
     padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 156px;
+    margin-top: -37px;
   }
 }
 
@@ -60,7 +65,7 @@
   height: 1px;
   background-color: #e6e6e6;
   position: absolute;
-  top: 107px;
+  top: 104px;
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -78,18 +83,18 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 324px);
-    gap: 141px 60px;
+    gap: 142px 60px;
   }
 
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
-    gap: 143px 80px;
+    gap: 132px 80px;
   }
 }
 
 .catalog__product-card {
-  padding: 20px 20px 25px;
+  padding: 20px 20px 16px;
   min-height: 209px;
   position: relative;
 
@@ -131,26 +136,27 @@
 
 .catalog__product-card-container {
   padding-left: 140px;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 160px;
+    padding-top: 162px;
   }
 }
 
 .catalog__picture {
   position: absolute;
-  top: 30.5px;
-  left: 36px;
+  top: 20.5px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
-    top: -80px;
+    top: -70px;
     left: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 43px;
+    left: 39px;
+    top: -63px;
   }
 }
 
@@ -167,7 +173,7 @@
     text-align: center;
     width: auto;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     font-size: 20px;
     line-height: 24px;
     padding: 0 50px;
@@ -175,7 +181,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 10px;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 }
 
@@ -192,11 +198,11 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 }
 
@@ -208,7 +214,7 @@
   @media (min-width: $tablet-width) {
     width: 250px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     position: relative;
   }
 
@@ -224,7 +230,11 @@
     height: 2px;
     background-color: #cdcdcd;
     position: absolute;
-    top: 27px;
+    top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 26px;
   }
 }
 
@@ -251,6 +261,8 @@
 }
 
 .catalog__product-card--addition {
+  padding-top: 26px;
+
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
@@ -267,8 +279,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 160px;
-    margin-bottom: 92px;
+    padding-top: 133px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
@@ -305,18 +317,19 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    top: 60px;
+    top: 24px;
     right: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 57px;
+    right: 53px;
+    top: 31px;
   }
 }
 
 .catalog__button {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {

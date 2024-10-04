@@ -10,17 +10,16 @@
 }
 
 .main-footer__wrapper {
-  padding: 40px 20px;
+  padding: 19px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding: 60px 30px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
+    padding: 72px 110px;
   }
 }
 
@@ -33,18 +32,24 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 406px 406px 406px;
+    gap: 142px;
   }
 }
 
 
 .main-footer__item {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 18px 0;
   border-bottom: 1px solid #d9d9d9;
   width: 100%;
 
@@ -58,10 +63,7 @@
 
 .main-footer__item:last-child {
   border-bottom: none;
-}
-
-.main-footer__logo-text {
-  padding-bottom: 20px;
+  text-align: right;
 }
 
 .main-footer__logo-text:hover {
@@ -89,6 +91,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 23px;
+    margin-top: -10px;
   }
 }
 
@@ -96,6 +99,7 @@
   fill: #666666;
   color: $base-color-text;
   text-decoration: none;
+  display: inline-block;
 }
 
 .main-footer__logo-academy-svg:hover {
@@ -109,4 +113,30 @@
 .main-footer__logo-image {
   width: 128px;
   height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+  }
+}
+
+.main-footer__item--logo {
+  @media (min-width: $tablet-width) {
+    justify-self: self-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.main-footer__item--logo-academy {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: self-end;
+  }
 }

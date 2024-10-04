@@ -4,16 +4,17 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, #eaeaea 50%, #ffffff 50%);
+    background: linear-gradient(0deg, #eaeaea 43%, #ffffff 40%);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(0deg, #eaeaea 80%, #ffffff 20%);
+    // тест переполнение, спросить про градиент
+    background: linear-gradient(0deg, #eaeaea calc(100% - 134px), #ffffff 20%);
   }
 }
 
 .examples__wrapper {
-  padding: 25px 20px 40px;
+  padding: 25px 20px 38px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px 101px;
@@ -45,6 +46,10 @@
   }
 }
 
+.examples__text-container {
+  margin-bottom: 19px;
+}
+
 
 .examples__text {
   font-family: $lato;
@@ -61,6 +66,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
+    width: 433px;
   }
 }
 
@@ -68,13 +74,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 99px;
+    align-items: self-start;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     margin-bottom: 0;
+    align-items: start;
   }
 }
 
@@ -84,84 +91,61 @@
   font-size: 24px;
   line-height: 24px;
   color: $base-color-text-black;
-  width: 124px;
-  min-height: 56px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
+  flex-direction: column;
+  width: 124px;
   margin: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  padding: 13px 20px;
+  padding-bottom: 0;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-  }
-
-  @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
     width: 162px;
-    min-width: 77px;
-    padding-top: 15px;
-    padding-bottom: 20px;
   }
 }
 
-.examples__label--weight::after {
-  content: "снижение веса";
-  background-color: #eaeaea;
-  width: 77px;
+.examples__result-text {
+  color: #444444;
   font-size: 12px;
   line-height: 12px;
+  margin-bottom: -15px;
+  background-color: #eaeaea;
   text-align: center;
-  position: absolute;
-  top: 46px;
-  left: 20px;
-  color: $base-color-text;
-  padding: 0 15px;
+  padding: 0 9px;
+  font-family: $lato;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+    padding: 0 6px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 -10px -10px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 14px;
-    line-height: 14px;
-    width: 96px;
-    padding: 0;
-    top: 63px;
-    left: 28px;
-    background-color: #e6e6e6;
+    background-color: #eaeaea;
+    margin-bottom: -11px;
   }
 }
 
-.examples__label--time::after {
-  content: "затрачено времени";
-  background-color: #eaeaea;
-  width: 77px;
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  position: absolute;
-  top: 46px;
-  left: 20px;
-  color: $base-color-text;
-  padding: 0 15px;
+.examples__result {
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 14px;
-    line-height: 14px;
-    width: 96px;
-    padding: 0;
-    top: 63px;
-    left: 28px;
-    background-color: #e6e6e6;
+    margin-bottom: 13px;
   }
 }
+
 
 .examples__background {
   @media (min-width: $desktop-width) {
@@ -183,21 +167,23 @@
     width: 436px;
     min-height: 317px;
     padding-top: 70px;
-    padding-bottom: 75px;
+    padding-bottom: 47px;
   }
 }
 
 .examples__container-label {
   display: flex;
   gap: 32px;
+  justify-content: space-between;
   margin-bottom: 34px;
 
-  @media (min-width: $desktop-width) {
-    gap: 42px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 }
 
@@ -223,17 +209,24 @@
   font-size: 14px;
   line-height: 20px;
   color: $base-color-text-black;
-  width: 188px;
+  width: 186px;
   margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 3px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    justify-content: flex-end;
+    padding-top: 11px;
+    padding-right: 1px;
+    gap: 8px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 100%;
-    gap: 63px;
+    width: auto;
+    gap: 65px;
   }
 }
 
@@ -247,8 +240,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 770px;
-    top: -140px;
+    left: 773px;
+    top: -136px;
   }
 }
 
@@ -262,14 +255,14 @@
   position: absolute;
   outline: none;
   z-index: 30;
-  left: 140px;
+  left: 138px;
 
   @media (min-width: $tablet-width) {
     left: 352px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 279px;
+    left: 275px;
   }
 }
 
@@ -277,9 +270,8 @@
   display: flex;
   justify-content: space-between;
 
-
   @media (min-width: $tablet-width) {
-
+    margin: 0 4px;
   }
 }
 
@@ -335,11 +327,11 @@
   stroke: #666666;
   color: #666666;
   position: absolute;
-  top: 104px;
+  top: 107px;
   left: -18px;
 
   @media (min-width: $tablet-width) {
-    top: 228px;
+    top: 236px;
     left: -18px;
   }
 }

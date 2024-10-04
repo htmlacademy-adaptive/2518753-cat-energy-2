@@ -2,13 +2,14 @@
   color: $base-color-text-black;
   font-family: $oswald;
   width: 100%;
+  overflow: hidden;
 }
 
 .subscription-form__wrapper {
   padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 68px;
+    padding: 80px 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +34,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
@@ -42,11 +45,17 @@
   height: 2px;
   background-color: $button-background;
   position: absolute;
-  top: 18px;
-  left: 212px;
+  top: 11px;
+  left: 192px;
 
   @media (min-width: $tablet-width) {
     left: 250px;
+    top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 294px;
+    top: 18px;
   }
 }
 
@@ -57,12 +66,13 @@
     height: 2px;
     background-color: $button-background;
     position: absolute;
-    top: 18px;
+    top: 14px;
     left: -667px;
   }
 
   @media (min-width: $desktop-width) {
-    left: -1250px;
+    left: -1260px;
+    top: 18px;
   }
 }
 
@@ -83,7 +93,7 @@
 .subscription-form__input {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -97,10 +107,12 @@
 }
 
 .subscription-form__field {
-  padding: 13px;
+  padding: 12px;
   font-size: 20px;
   line-height: 29.64px;
   border: 1px solid #cdcdcd;
+  text-transform: uppercase;
+  font-family: $oswald;
 
   @media (min-width: $tablet-width) {
     width: 376px;
@@ -114,12 +126,13 @@
 }
 
 .subscription-form__button {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
     padding: 15px 69.5px;
-    font-size: 20px;
-    line-height: 26px;
   }
 }
