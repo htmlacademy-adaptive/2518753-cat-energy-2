@@ -1,1 +1,15 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: $lato;
+  color: $base-color-text;
+  font-weight: 400;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

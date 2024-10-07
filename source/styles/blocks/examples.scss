@@ -1,0 +1,345 @@
+.examples {
+  background-color: #eaeaea;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(0deg, #eaeaea 43%, #ffffff 40%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(0deg, #eaeaea calc(100% - 134px), #ffffff 20%);
+  }
+}
+
+.examples__wrapper {
+  padding: 25px 20px 38px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 110px 0;
+    padding-top: 0;
+  }
+}
+
+.examples__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 40px;
+  color: $base-color-text-black;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.examples__text-container {
+  margin-bottom: 19px;
+}
+
+
+.examples__text {
+  font-family: $lato;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    width: 433px;
+  }
+}
+
+.examples__expenses-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+    align-items: start;
+  }
+}
+
+
+.examples__options {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: $base-color-text-black;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 124px;
+  margin: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  padding: 13px 20px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 4px;
+    width: 162px;
+  }
+}
+
+.examples__result-text {
+  color: #444444;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: -15px;
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 0 9px;
+  font-family: $lato;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding: 0 6px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 -10px -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
+    margin-bottom: -11px;
+  }
+}
+
+.examples__result {
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
+  }
+}
+
+
+.examples__background {
+  @media (min-width: $desktop-width) {
+    margin-left: -110px;
+    margin-right: -110px;
+    padding-left: 110px;
+    padding-right: 110px;
+    min-height: 462px;
+    position: relative;
+  }
+}
+
+.examples__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    min-height: 317px;
+    padding-top: 70px;
+    padding-bottom: 47px;
+  }
+}
+
+.examples__container-label {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.examples__tiitle-examples {
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.examples__examples {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.examples__expenses {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-color-text-black;
+  width: 186px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    justify-content: flex-end;
+    padding-top: 11px;
+    padding-right: 1px;
+    gap: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: auto;
+    gap: 65px;
+  }
+}
+
+.examples__picture {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 773px;
+    top: -136px;
+  }
+}
+
+.examples__button-thumb {
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  position: absolute;
+  outline: none;
+  z-index: 30;
+  left: 138px;
+
+  @media (min-width: $tablet-width) {
+    left: 352px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 275px;
+  }
+}
+
+.examples__picture-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 4px;
+  }
+}
+
+.examples__picture-before {
+  overflow: hidden;
+  width: 50%;
+  text-align: left;
+}
+
+.examples__cat-big {
+  display: block;
+  transform: translateX(0%);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(20%);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(0);
+  }
+}
+
+.examples__picture-after {
+  overflow: hidden;
+  text-align: right;
+  width: 50%;
+}
+
+.examples__cat-small {
+  display: block;
+  width: 200%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(-60%);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-284px);
+  }
+}
+
+.examples__button-thumb:hover {
+  background-color: #68b738;
+}
+
+.examples__button-thumb:active {
+  background-color: #68b738;
+  opacity: 0.6;
+}
+
+.examples__thumb {
+  stroke: #666666;
+  color: #666666;
+  position: absolute;
+  top: 107px;
+  left: -18px;
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+    left: -18px;
+  }
+}
+
+.examples__thumb:hover {
+  stroke: #68b738;
+  color: #68b738;
+}
+
+.examples__thumb:active {
+  stroke: #68b738;
+  color: #68b738;
+  opacity: 0.6;
+}
