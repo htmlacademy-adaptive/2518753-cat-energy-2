@@ -10,6 +10,7 @@
   <link rel="icon" href="favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon.png" sizes="180x180">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -22,14 +23,14 @@
           <picture>
             <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg 1x">
             <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg 1x">
-            <img src="images/header-mobile.svg" width="190" height="38" alt="Продукция Cat Energy">
+            <img loading="lazy" src="images/header-mobile.svg" width="190" height="38" alt="Продукция Cat Energy">
           </picture>
         </a>
         <button class="main-header__burger" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class="main-header__icon main-header__burger--icon" viewBox="0 0 24 24" width="24" height="24">
+          <svg class="main-header__icon main-header__icon--burger" viewBox="0 0 24 24" width="24" height="24">
             <use href="..\icons\stack.svg#burger"></use>
           </svg>
-          <svg class="main-header__icon main-header__cross--icon" viewBox="0 0 24 24" width="24" height="24">
+          <svg class="main-header__icon main-header__icon--cross" viewBox="0 0 24 24" width="24" height="24">
             <use href="..\icons\stack.svg#cross"></use>
           </svg>
         </button>
@@ -60,6 +61,9 @@
           <p class="hero__tagline">Занялся собой? Займись котом!</p>
         </div>
         <picture class="hero__picture">
+          <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="images/index-can-mobile@1x.webp, images/index-can-mobile@2x.webp 2x">
           <source width="552" height="499" type="image/jpg" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
           <source width="709" height="609" type="image/jpg" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
           <img src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Продукция Cat Energy">
@@ -117,7 +121,6 @@
                   <div class="examples__options">
                     <span class="examples__result">5 КГ</span>
                     <span class="examples__result-text">снижение веса</span>
-
                   </div>
                   <div class="examples__options">
                     <span class="examples__result">60 ДНЕЙ</span>
@@ -140,14 +143,18 @@
               <div class="examples__picture-container">
                 <div class="examples__picture-before">
                   <picture class="examples__cat-big">
+                    <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x,images/cat-before-tablet@2x.webp 2x">
+                    <source width="280" height="256" type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x,images/cat-before-tablet@2x.webp 2x">
                     <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x,images/cat-before-tablet@2x.png 2x">
-                    <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Продукция Cat Energy">
+                    <img loading="lazy" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Продукция Cat Energy">
                   </picture>
                 </div>
                 <div class=" examples__picture-after">
                   <picture class="examples__cat-small">
+                    <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x,images/cat-after-tablet@2x.webp 2x">
+                    <source width="280" height="256" type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x,images/cat-after-tablet@2x.webp 2x">
                     <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x,images/cat-after-tablet@2x.png 2x">
-                    <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Продукция Cat Energy">
+                    <img loading="lazy" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Продукция Cat Energy">
                   </picture>
                 </div>
               </div>
@@ -168,8 +175,7 @@
             <p class="map__city">Санкт-Петербург</p>
           </div>
         </div>
-        <iframe class="map__inframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428381988!2d30.320503012697746!3d59.938796861982894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1723025348032!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428381988!2d30.320503012697746!3d59.938796861982894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1723025348032!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -179,7 +185,7 @@
       <ul class="main-footer__list">
         <li class="main-footer__item">
           <a class="main-footer__logo-text" href="../source/index.html">
-            <img class="main-footer__logo-image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Логотип магазина CAT ENERGY">
+            <img class="main-footer__logo-image" loading="lazy" src="images/logo-cat-energy.svg" width="101" height="18" alt="Логотип магазина CAT ENERGY">
           </a>
         </li>
         <li class="main-footer__item">
