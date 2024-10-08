@@ -250,7 +250,6 @@
   border-radius: 2px;
   padding: 0;
   position: absolute;
-  outline: none;
   z-index: 30;
   left: 138px;
 
@@ -311,15 +310,6 @@
   }
 }
 
-.examples__button-thumb:hover {
-  background-color: #68b738;
-}
-
-.examples__button-thumb:active {
-  background-color: #68b738;
-  opacity: 0.6;
-}
-
 .examples__thumb {
   stroke: #666666;
   color: #666666;
@@ -333,18 +323,40 @@
   }
 }
 
-.examples__thumb:hover {
-  stroke: #68b738;
-  color: #68b738;
+.examples__button-thumb:hover {
+  background-color: #68b738;
 }
 
-.examples__thumb:active {
-  stroke: #68b738;
-  color: #68b738;
+.examples__button-thumb:active {
+  background-color: #68b738;
   opacity: 0.6;
 }
 
-.examples__thumb:focus {
+.examples__button-thumb:focus {
+  outline: 2px solid #68b738;
+  color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    outline: 3px solid #68b738;
+  }
+}
+
+
+.examples__button-thumb:hover .examples__thumb {
   stroke: #68b738;
   color: #68b738;
+}
+
+.examples__button-thumb:active .examples__thumb {
+  stroke: #68b738;
+  color: #68b738;
+}
+
+.examples__button-thumb:focus .examples__thumb {
+  outline: 2px solid #68b738;
+  left: -18px;
+
+  @media (min-width: $tablet-width) {
+    outline: 5px solid #68b738;
+  }
 }
