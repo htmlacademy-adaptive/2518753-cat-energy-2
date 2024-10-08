@@ -18,24 +18,27 @@
 
 .map__container {
   padding: 26px 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 17px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
-    justify-content: space-between;
     min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 308px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     padding: 60px 78px;
     position: absolute;
     background-color: #ffffff;
-    width: 565px;
     min-height: 199px;
     top: 96px;
     left: 111px;
+    gap: 88px;
   }
 }
 
