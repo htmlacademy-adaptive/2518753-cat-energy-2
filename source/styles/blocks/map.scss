@@ -109,3 +109,11 @@
     top: 77px;
   }
 }
+
+.map__picture {
+  display: none;
+}
+
+.map__picture .map__picture--nojs {
+  display: block;
+}
