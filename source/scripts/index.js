@@ -1,8 +1,13 @@
 /* в этот файл добавляет скрипты*/
 const navMain = document.querySelector('.main-nav ');
 const navBurger = document.querySelector('.main-header__burger');
+const mapPicture = document.querySelector('.map__picture');
+const mapIframe = document.querySelector('.map__iframe');
+
 
 navMain.classList.remove('main-nav--nojs');
+mapPicture.classList.remove('map__picture--nojs');
+mapIframe.classList.remove('map__iframe--nojs');
 
 navBurger.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--closed')) {

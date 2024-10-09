@@ -250,9 +250,9 @@
   border-radius: 2px;
   padding: 0;
   position: absolute;
-  outline: none;
   z-index: 30;
   left: 138px;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     left: 352px;
@@ -311,15 +311,6 @@
   }
 }
 
-.examples__button-thumb:hover {
-  background-color: #68b738;
-}
-
-.examples__button-thumb:active {
-  background-color: #68b738;
-  opacity: 0.6;
-}
-
 .examples__thumb {
   stroke: #666666;
   color: #666666;
@@ -333,13 +324,19 @@
   }
 }
 
-.examples__thumb:hover {
-  stroke: #68b738;
-  color: #68b738;
+.examples__button-thumb:hover,
+.examples__button-thumb:focus {
+  background-color: #68b738;
 }
 
-.examples__thumb:active {
+.examples__button-thumb:active {
+  background-color: #68b738;
+  opacity: 0.6;
+}
+
+.examples__button-thumb:hover .examples__thumb,
+.examples__button-thumb:active .examples__thumb,
+.examples__button-thumb:focus .examples__thumb {
   stroke: #68b738;
   color: #68b738;
-  opacity: 0.6;
 }

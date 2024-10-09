@@ -45,6 +45,15 @@
   }
 }
 
+.main-nav--closed.main-nav--nojs {
+  display: block;
+  position: static;
+}
+
+.main-nav--nojs .main-nav__site-list {
+  position: static;
+}
+
 .main-nav--opened {
   display: block;
 }
